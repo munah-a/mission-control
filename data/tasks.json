@@ -1,0 +1,106 @@
+{
+  "tasks": [
+    {
+      "id": "guide_user",
+      "title": "📖 How to Use Mission Control",
+      "description": "Quick reference for using Mission Control with Dhombs.\n\n**Workflow:**\n1. Create tasks in Backlog\n2. Move to 'In Progress' when ready\n3. Dhombs works on it (or you do)\n4. Move to 'Review' when done\n5. Approve → Done, or add feedback",
+      "status": "permanent",
+      "project": "guides",
+      "tags": ["guide"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Drag & drop tasks between columns", "done": false },
+        { "id": "sub_002", "title": "Click task to view/edit details", "done": false },
+        { "id": "sub_003", "title": "Add subtasks for complex work", "done": false },
+        { "id": "sub_004", "title": "Use comments for updates/feedback", "done": false }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-02T00:00:00Z"
+    },
+    {
+      "id": "task_engineer_toolbox",
+      "title": "🔧 Build Engineer's Toolbox Web App",
+      "description": "Research and build a web-based calculation tool for engineering design.\n\n**Coastal:**\n- Breakwater (Hudson, Van der Meer)\n- Revetment sizing\n- Seawall overtopping (EurOtop)\n\n**Structural:**\n- RC beam design\n- Column design\n\n**Roads:**\n- Asphalt pavement (AASHTO)",
+      "status": "backlog",
+      "project": "tools",
+      "tags": ["coastal", "structural", "development"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Research complete (see engineers-toolbox-research.md)", "done": true },
+        { "id": "sub_002", "title": "Build Hudson/Van der Meer calculator", "done": false },
+        { "id": "sub_003", "title": "Add overtopping calculator", "done": false },
+        { "id": "sub_004", "title": "Add RC beam calculator", "done": false },
+        { "id": "sub_005", "title": "Add pavement design", "done": false },
+        { "id": "sub_006", "title": "PDF report generation", "done": false }
+      ],
+      "priority": "high",
+      "dod": "Working web app with at least breakwater + overtopping calcs, deployed to GitHub Pages",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "Research saved to memory/learning/engineers-toolbox-research.md. Ready to start building MVP.",
+          "timestamp": "2026-02-02T14:56:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T14:54:00Z"
+    },
+    {
+      "id": "task_nwd_test",
+      "title": "🔄 Test NWD Merge Script",
+      "description": "Test the Navisworks merge automation script.\n\nScript location: workspace/scripts/merge_nwd.py\n\nRun with: python merge_nwd.py <folder>",
+      "status": "backlog",
+      "project": "bim",
+      "tags": ["navisworks", "automation"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Run script on test folder", "done": false },
+        { "id": "sub_002", "title": "Verify merged NWD opens correctly", "done": false },
+        { "id": "sub_003", "title": "Report any issues", "done": false }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-02T14:50:00Z"
+    },
+    {
+      "id": "task_openrouter",
+      "title": "🔗 Set up OpenRouter for Multi-Model Access",
+      "description": "Configure OpenRouter to access Gemini, Grok, and other models.\n\n1. Get API key from openrouter.ai\n2. Run: openclaw onboard --auth-choice apiKey --token-provider openrouter --token <key>\n3. Test with Gemini model",
+      "status": "backlog",
+      "project": "setup",
+      "tags": ["config", "ai"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Create OpenRouter account", "done": false },
+        { "id": "sub_002", "title": "Get API key", "done": false },
+        { "id": "sub_003", "title": "Configure in OpenClaw", "done": false }
+      ],
+      "priority": "low",
+      "comments": [],
+      "createdAt": "2026-02-02T15:46:00Z"
+    },
+    {
+      "id": "task_jsonbin_sync",
+      "title": "☁️ Set up Cloud Sync for Kanban",
+      "description": "Configure JSONBin cloud sync for the Kanban app so tasks sync between PC and phone.\n\n1. Create account at jsonbin.io\n2. Get API key\n3. Open kanban Settings → paste key",
+      "status": "backlog",
+      "project": "setup",
+      "tags": ["config", "sync"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Create JSONBin account", "done": false },
+        { "id": "sub_002", "title": "Configure in Kanban app", "done": false }
+      ],
+      "priority": "low",
+      "comments": [],
+      "createdAt": "2026-02-02T14:44:00Z"
+    }
+  ],
+  "projects": [
+    { "id": "guides", "name": "Guides", "color": "#10b981", "icon": "📚" },
+    { "id": "tools", "name": "Tools", "color": "#f59e0b", "icon": "🔧" },
+    { "id": "bim", "name": "BIM", "color": "#3b82f6", "icon": "🏗️" },
+    { "id": "coastal", "name": "Coastal", "color": "#06b6d4", "icon": "🌊" },
+    { "id": "setup", "name": "Setup", "color": "#8b5cf6", "icon": "⚙️" }
+  ],
+  "activities": [
+    { "type": "created", "actor": "Dhombs", "task": "Engineer's Toolbox", "time": "just now" },
+    { "type": "created", "actor": "Dhombs", "task": "NWD Merge Script", "time": "just now" }
+  ],
+  "lastUpdated": "2026-02-02T16:07:00Z"
+}
