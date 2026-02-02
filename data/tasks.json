@@ -23,12 +23,12 @@
         {
           "id": "sub_003",
           "title": "Add subtasks for complex work",
-          "done": false
+          "done": true
         },
         {
           "id": "sub_004",
           "title": "Use comments for updates/feedback",
-          "done": false
+          "done": true
         }
       ],
       "priority": "medium",
