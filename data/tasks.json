@@ -18,6 +18,57 @@
       "createdAt": "2026-02-02T00:00:00Z"
     },
     {
+      "id": "task_switzerland_trip",
+      "title": "🇨🇭 Plan Switzerland Trip",
+      "description": "Trip to Switzerland on March 10, 2026.\n\nMeeting Daniel (business partner) + exploring?\n\nDetails: memory/switzerland-trip.md",
+      "status": "in_progress",
+      "project": "personal",
+      "tags": ["travel", "urgent", "planning"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Confirm trip purpose & duration", "done": false },
+        { "id": "sub_002", "title": "Check visa requirements (Schengen)", "done": false },
+        { "id": "sub_003", "title": "Book flights", "done": false },
+        { "id": "sub_004", "title": "Book accommodation", "done": false },
+        { "id": "sub_005", "title": "Travel insurance", "done": false },
+        { "id": "sub_006", "title": "Learn German to B1", "done": false },
+        { "id": "sub_007", "title": "Pack winter clothes", "done": false }
+      ],
+      "priority": "high",
+      "dod": "Flights, accommodation, and visa sorted. German at conversational level.",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "Created trip planning doc. Need details from Munah: duration, cities, staying with Daniel?",
+          "timestamp": "2026-02-02T18:02:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T18:02:00Z"
+    },
+    {
+      "id": "task_german_b1",
+      "title": "🇩🇪 Learn German to B1",
+      "description": "Intensive German course: B1 level by March 10, 2026.\n\n**Daily lessons at 9 PM**\n\nProgress tracked in: memory/learning/german-progress.md",
+      "status": "in_progress",
+      "project": "learning",
+      "tags": ["language", "german", "daily"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Week 1-2: A1 Foundation", "done": false },
+        { "id": "sub_002", "title": "Week 3-4: A2 Building Blocks", "done": false },
+        { "id": "sub_003", "title": "Week 5: B1 Part 1", "done": false },
+        { "id": "sub_004", "title": "Week 6: B1 Polish & Practice", "done": false }
+      ],
+      "priority": "high",
+      "dod": "Can hold basic conversations, understand written German, handle travel situations",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "Daily lessons scheduled for 9 PM. 36 days to B1 — let's do this!",
+          "timestamp": "2026-02-02T18:02:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T18:02:00Z"
+    },
+    {
       "id": "task_engineer_toolbox",
       "title": "🔧 Build Engineer's Toolbox Web App",
       "description": "Build a web-based calculation tool for engineering design.\n\n**Coastal:**\n- Breakwater (Hudson, Van der Meer)\n- Revetment sizing\n- Seawall overtopping (EurOtop)\n\n**Structural:**\n- RC beam design\n- Column design\n\n**Roads:**\n- Asphalt pavement (AASHTO)\n\nResearch complete: see memory/learning/engineers-toolbox-research.md",
@@ -192,13 +243,15 @@
     { "id": "tools", "name": "Tools", "color": "#f59e0b", "icon": "🔧" },
     { "id": "bim", "name": "BIM", "color": "#3b82f6", "icon": "🏗️" },
     { "id": "coastal", "name": "Coastal", "color": "#06b6d4", "icon": "🌊" },
-    { "id": "setup", "name": "Setup", "color": "#8b5cf6", "icon": "⚙️" }
+    { "id": "setup", "name": "Setup", "color": "#8b5cf6", "icon": "⚙️" },
+    { "id": "personal", "name": "Personal", "color": "#ec4899", "icon": "🏠" },
+    { "id": "learning", "name": "Learning", "color": "#f97316", "icon": "📖" }
   ],
   "activities": [
-    { "type": "completed", "actor": "Dhombs", "task": "Mission Control Setup", "time": "just now" },
-    { "type": "completed", "actor": "Dhombs", "task": "Skills Installation", "time": "30 min ago" },
-    { "type": "created", "actor": "Dhombs", "task": "Engineer's Toolbox", "time": "3 hours ago" },
-    { "type": "created", "actor": "Dhombs", "task": "NWD Merge Script", "time": "3 hours ago" }
+    { "type": "created", "actor": "Dhombs", "task": "Switzerland Trip", "time": "just now" },
+    { "type": "created", "actor": "Dhombs", "task": "Learn German to B1", "time": "just now" },
+    { "type": "completed", "actor": "Dhombs", "task": "Mission Control Setup", "time": "1 hour ago" },
+    { "type": "completed", "actor": "Dhombs", "task": "Skills Installation", "time": "1 hour ago" }
   ],
-  "lastUpdated": "2026-02-02T17:25:00Z"
+  "lastUpdated": "2026-02-02T18:03:00Z"
 }
