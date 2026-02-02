@@ -4,7 +4,7 @@
       "id": "guide_user",
       "title": "📖 How to Use Mission Control",
       "description": "Quick reference for using Mission Control with Dhombs.\n\n**Workflow:**\n1. Create tasks in Backlog\n2. Move to 'In Progress' when ready\n3. Dhombs works on it (or you do)\n4. Move to 'Review' when done\n5. Approve → Done, or add feedback",
-      "status": "permanent",
+      "status": "done",
       "project": "guides",
       "tags": [
         "guide"
@@ -33,7 +33,9 @@
       ],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-02T00:00:00Z"
+      "createdAt": "2026-02-02T00:00:00Z",
+      "completedAt": "2026-02-02T19:35:30.101Z",
+      "sortOrder": 0
     },
     {
       "id": "task_wall_coverings",
@@ -382,7 +384,8 @@
           "timestamp": "2026-02-02T16:58:00Z"
         }
       ],
-      "createdAt": "2026-02-02T16:40:00Z"
+      "createdAt": "2026-02-02T16:40:00Z",
+      "sortOrder": 0
     },
     {
       "id": "task_mission_control_setup",
@@ -434,7 +437,8 @@
           "timestamp": "2026-02-02T17:24:00Z"
         }
       ],
-      "createdAt": "2026-02-02T17:07:00Z"
+      "createdAt": "2026-02-02T17:07:00Z",
+      "sortOrder": 1
     },
     {
       "id": "task_revit_skill",
@@ -470,7 +474,8 @@
       ],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-02T12:08:00Z"
+      "createdAt": "2026-02-02T12:08:00Z",
+      "sortOrder": 0
     },
     {
       "id": "task_kanban_created",
@@ -516,7 +521,8 @@
       ],
       "priority": "medium",
       "comments": [],
-      "createdAt": "2026-02-02T12:12:00Z"
+      "createdAt": "2026-02-02T12:12:00Z",
+      "sortOrder": 1
     },
     {
       "id": "task_openrouter",
@@ -603,6 +609,14 @@
   ],
   "activities": [
     {
+      "type": "moved",
+      "actor": "munah-a",
+      "task": "📖 How to Use Mission Control",
+      "from": "permanent",
+      "to": "done",
+      "time": "just now"
+    },
+    {
       "type": "created",
       "actor": "Dhombs",
       "task": "Wall Coverings Feasibility",
@@ -627,5 +641,5 @@
       "time": "3 hours ago"
     }
   ],
-  "lastUpdated": "2026-02-02T19:21:00Z"
+  "lastUpdated": "2026-02-02T19:35:30.101Z"
 }
