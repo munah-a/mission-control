@@ -18,28 +18,54 @@
       "createdAt": "2026-02-02T00:00:00Z"
     },
     {
+      "id": "task_wall_coverings",
+      "title": "🏠 Feasibility: Wall Coverings Retail Business",
+      "description": "Research feasibility of starting a retail business for wall coverings and interior finishing products.\n\n**Advantages:**\n- Uncle in Dubai with China factory connections\n- BIM background = construction industry knowledge\n- Maldives construction boom\n\nDetails: memory/projects/wall-coverings-feasibility.md",
+      "status": "in_progress",
+      "project": "business",
+      "tags": ["feasibility", "retail", "new-venture"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Research Maldives import duties", "done": false },
+        { "id": "sub_002", "title": "Talk to uncle about products & pricing", "done": false },
+        { "id": "sub_003", "title": "Survey current competitors", "done": false },
+        { "id": "sub_004", "title": "Estimate startup capital", "done": false },
+        { "id": "sub_005", "title": "Identify target customers", "done": false },
+        { "id": "sub_006", "title": "Financial projections", "done": false }
+      ],
+      "priority": "medium",
+      "dod": "Clear go/no-go decision with numbers to back it up",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "Created feasibility doc. Researching import duties overnight. Questions drafted for uncle.",
+          "timestamp": "2026-02-02T19:21:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T19:21:00Z"
+    },
+    {
       "id": "task_switzerland_trip",
       "title": "🇨🇭 Plan Switzerland Trip",
-      "description": "Trip to Switzerland on March 10, 2026.\n\nMeeting Daniel (business partner) + exploring?\n\nDetails: memory/switzerland-trip.md",
+      "description": "Winterthur, March 10-19, 2026 (9 nights)\n\nBusiness + team building with Daniel\n\nDetails: memory/switzerland-trip.md",
       "status": "in_progress",
       "project": "personal",
       "tags": ["travel", "urgent", "planning"],
       "subtasks": [
-        { "id": "sub_001", "title": "Confirm trip purpose & duration", "done": false },
-        { "id": "sub_002", "title": "Check visa requirements (Schengen)", "done": false },
+        { "id": "sub_001", "title": "Get invitation letter from Daniel", "done": false },
+        { "id": "sub_002", "title": "Apply for Schengen visa", "done": false },
         { "id": "sub_003", "title": "Book flights", "done": false },
-        { "id": "sub_004", "title": "Book accommodation", "done": false },
+        { "id": "sub_004", "title": "Book hotel in Winterthur", "done": false },
         { "id": "sub_005", "title": "Travel insurance", "done": false },
         { "id": "sub_006", "title": "Learn German to B1", "done": false },
         { "id": "sub_007", "title": "Pack winter clothes", "done": false }
       ],
       "priority": "high",
-      "dod": "Flights, accommodation, and visa sorted. German at conversational level.",
+      "dod": "Visa approved, flights booked, hotel confirmed",
       "comments": [
         {
           "author": "Dhombs",
-          "text": "Created trip planning doc. Need details from Munah: duration, cities, staying with Daniel?",
-          "timestamp": "2026-02-02T18:02:00Z"
+          "text": "Cover letter drafted. Reminder set for Daniel invitation letter.",
+          "timestamp": "2026-02-02T18:11:00Z"
         }
       ],
       "createdAt": "2026-02-02T18:02:00Z"
@@ -245,13 +271,14 @@
     { "id": "coastal", "name": "Coastal", "color": "#06b6d4", "icon": "🌊" },
     { "id": "setup", "name": "Setup", "color": "#8b5cf6", "icon": "⚙️" },
     { "id": "personal", "name": "Personal", "color": "#ec4899", "icon": "🏠" },
-    { "id": "learning", "name": "Learning", "color": "#f97316", "icon": "📖" }
+    { "id": "learning", "name": "Learning", "color": "#f97316", "icon": "📖" },
+    { "id": "business", "name": "Business", "color": "#14b8a6", "icon": "💼" }
   ],
   "activities": [
-    { "type": "created", "actor": "Dhombs", "task": "Switzerland Trip", "time": "just now" },
-    { "type": "created", "actor": "Dhombs", "task": "Learn German to B1", "time": "just now" },
-    { "type": "completed", "actor": "Dhombs", "task": "Mission Control Setup", "time": "1 hour ago" },
-    { "type": "completed", "actor": "Dhombs", "task": "Skills Installation", "time": "1 hour ago" }
+    { "type": "created", "actor": "Dhombs", "task": "Wall Coverings Feasibility", "time": "just now" },
+    { "type": "created", "actor": "Dhombs", "task": "Switzerland Trip", "time": "2 hours ago" },
+    { "type": "created", "actor": "Dhombs", "task": "Learn German to B1", "time": "2 hours ago" },
+    { "type": "completed", "actor": "Dhombs", "task": "Mission Control Setup", "time": "3 hours ago" }
   ],
-  "lastUpdated": "2026-02-02T18:03:00Z"
+  "lastUpdated": "2026-02-02T19:21:00Z"
 }
