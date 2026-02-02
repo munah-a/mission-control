@@ -20,24 +20,25 @@
     {
       "id": "task_engineer_toolbox",
       "title": "🔧 Build Engineer's Toolbox Web App",
-      "description": "Research and build a web-based calculation tool for engineering design.\n\n**Coastal:**\n- Breakwater (Hudson, Van der Meer)\n- Revetment sizing\n- Seawall overtopping (EurOtop)\n\n**Structural:**\n- RC beam design\n- Column design\n\n**Roads:**\n- Asphalt pavement (AASHTO)",
+      "description": "Build a web-based calculation tool for engineering design.\n\n**Coastal:**\n- Breakwater (Hudson, Van der Meer)\n- Revetment sizing\n- Seawall overtopping (EurOtop)\n\n**Structural:**\n- RC beam design\n- Column design\n\n**Roads:**\n- Asphalt pavement (AASHTO)\n\nResearch complete: see memory/learning/engineers-toolbox-research.md",
       "status": "backlog",
       "project": "tools",
-      "tags": ["coastal", "structural", "development"],
+      "tags": ["coastal", "structural", "development", "priority"],
       "subtasks": [
-        { "id": "sub_001", "title": "Research complete (see engineers-toolbox-research.md)", "done": true },
+        { "id": "sub_001", "title": "Research complete", "done": true },
         { "id": "sub_002", "title": "Build Hudson/Van der Meer calculator", "done": false },
         { "id": "sub_003", "title": "Add overtopping calculator", "done": false },
         { "id": "sub_004", "title": "Add RC beam calculator", "done": false },
         { "id": "sub_005", "title": "Add pavement design", "done": false },
-        { "id": "sub_006", "title": "PDF report generation", "done": false }
+        { "id": "sub_006", "title": "PDF report generation", "done": false },
+        { "id": "sub_007", "title": "Deploy to GitHub Pages", "done": false }
       ],
       "priority": "high",
-      "dod": "Working web app with at least breakwater + overtopping calcs, deployed to GitHub Pages",
+      "dod": "Working web app with breakwater + overtopping calcs, deployed to GitHub Pages",
       "comments": [
         {
           "author": "Dhombs",
-          "text": "Research saved to memory/learning/engineers-toolbox-research.md. Ready to start building MVP.",
+          "text": "Research saved to memory/learning/engineers-toolbox-research.md. Ready to start building MVP with Hudson formula first.",
           "timestamp": "2026-02-02T14:56:00Z"
         }
       ],
@@ -46,26 +47,136 @@
     {
       "id": "task_nwd_test",
       "title": "🔄 Test NWD Merge Script",
-      "description": "Test the Navisworks merge automation script.\n\nScript location: workspace/scripts/merge_nwd.py\n\nRun with: python merge_nwd.py <folder>",
+      "description": "Test the Navisworks merge automation script.\n\n**Location:** workspace/scripts/merge_nwd.py\n**Run:** python merge_nwd.py <folder>\n\nMerges all NWD/NWC files in a folder into one combined NWD.",
       "status": "backlog",
       "project": "bim",
-      "tags": ["navisworks", "automation"],
+      "tags": ["navisworks", "automation", "testing"],
       "subtasks": [
         { "id": "sub_001", "title": "Run script on test folder", "done": false },
         { "id": "sub_002", "title": "Verify merged NWD opens correctly", "done": false },
-        { "id": "sub_003", "title": "Report any issues", "done": false }
+        { "id": "sub_003", "title": "Report any issues to Dhombs", "done": false }
       ],
       "priority": "medium",
       "comments": [],
       "createdAt": "2026-02-02T14:50:00Z"
     },
     {
+      "id": "task_delft3d_learn",
+      "title": "📚 Learn Delft3D (Ongoing)",
+      "description": "Continue learning Delft3D for coastal modeling.\n\nDhombs is researching during heartbeats and saving notes to memory/learning/.\n\nSkill created: skills/delft3d-coastal/",
+      "status": "in_progress",
+      "project": "coastal",
+      "tags": ["learning", "coastal", "ongoing"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Basic concepts & modules", "done": true },
+        { "id": "sub_002", "title": "Grid generation", "done": true },
+        { "id": "sub_003", "title": "SWAN wave modeling", "done": false },
+        { "id": "sub_004", "title": "MOR morphodynamics", "done": false },
+        { "id": "sub_005", "title": "Run first test simulation", "done": false }
+      ],
+      "priority": "medium",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "Created delft3d-coastal skill with grid generator and reference docs. Learning notes in memory/learning/2026-02-02-delft3d.md",
+          "timestamp": "2026-02-02T16:59:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T16:00:00Z"
+    },
+    {
+      "id": "task_skills_setup",
+      "title": "⚙️ Install & Configure Skills",
+      "description": "Install skills from ClawHub to extend Dhombs' capabilities.",
+      "status": "done",
+      "project": "setup",
+      "tags": ["config", "skills"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Install excel-bt, pdf-om, coding-agent-e3, task-monitor", "done": true },
+        { "id": "sub_002", "title": "Install security skills (zero-trust, tokenguard, input-guard)", "done": true },
+        { "id": "sub_003", "title": "Install health skills (healthcheck, garmin-connect, hevy, diet-tracker, feast)", "done": true },
+        { "id": "sub_004", "title": "Install utility skills (windows-control, proactive-agent, mission-control)", "done": true },
+        { "id": "sub_005", "title": "Install language-learning", "done": true },
+        { "id": "sub_006", "title": "Restart gateway to load skills", "done": true }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "20 skills installed and loaded!",
+          "timestamp": "2026-02-02T16:58:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T16:40:00Z"
+    },
+    {
+      "id": "task_mission_control_setup",
+      "title": "🎛️ Set Up Mission Control",
+      "description": "Deploy Mission Control dashboard for task management.",
+      "status": "done",
+      "project": "setup",
+      "tags": ["config", "dashboard"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Copy dashboard files", "done": true },
+        { "id": "sub_002", "title": "Create initial tasks.json", "done": true },
+        { "id": "sub_003", "title": "Install GitHub CLI", "done": true },
+        { "id": "sub_004", "title": "Authenticate with GitHub", "done": true },
+        { "id": "sub_005", "title": "Create repo & push", "done": true },
+        { "id": "sub_006", "title": "Enable GitHub Pages", "done": true }
+      ],
+      "priority": "high",
+      "comments": [
+        {
+          "author": "Dhombs",
+          "text": "Live at https://munah-a.github.io/mission-control/",
+          "timestamp": "2026-02-02T17:24:00Z"
+        }
+      ],
+      "createdAt": "2026-02-02T17:07:00Z"
+    },
+    {
+      "id": "task_revit_skill",
+      "title": "📐 Revit/BIM Skill Created",
+      "description": "Created revit-bim skill with Dynamo patterns, pyRevit templates, and Revit API reference.",
+      "status": "done",
+      "project": "bim",
+      "tags": ["revit", "skill"],
+      "subtasks": [
+        { "id": "sub_001", "title": "SKILL.md with Dynamo/pyRevit guidance", "done": true },
+        { "id": "sub_002", "title": "Schedule export script", "done": true },
+        { "id": "sub_003", "title": "API reference docs", "done": true },
+        { "id": "sub_004", "title": "Dynamo packages list", "done": true }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-02T12:08:00Z"
+    },
+    {
+      "id": "task_kanban_created",
+      "title": "📋 Kanban App Created",
+      "description": "Built local Kanban app with cloud sync capability.\n\nDeployed to: https://munah-a.github.io/dhombs-kanban/",
+      "status": "done",
+      "project": "tools",
+      "tags": ["kanban", "app"],
+      "subtasks": [
+        { "id": "sub_001", "title": "Basic kanban with drag & drop", "done": true },
+        { "id": "sub_002", "title": "Multiple boards", "done": true },
+        { "id": "sub_003", "title": "Search & filters", "done": true },
+        { "id": "sub_004", "title": "Export/Import JSON", "done": true },
+        { "id": "sub_005", "title": "Cloud sync (JSONBin)", "done": true },
+        { "id": "sub_006", "title": "Deploy to GitHub Pages", "done": true }
+      ],
+      "priority": "medium",
+      "comments": [],
+      "createdAt": "2026-02-02T12:12:00Z"
+    },
+    {
       "id": "task_openrouter",
-      "title": "🔗 Set up OpenRouter for Multi-Model Access",
+      "title": "🔗 Set up OpenRouter (Optional)",
       "description": "Configure OpenRouter to access Gemini, Grok, and other models.\n\n1. Get API key from openrouter.ai\n2. Run: openclaw onboard --auth-choice apiKey --token-provider openrouter --token <key>\n3. Test with Gemini model",
       "status": "backlog",
       "project": "setup",
-      "tags": ["config", "ai"],
+      "tags": ["config", "ai", "optional"],
       "subtasks": [
         { "id": "sub_001", "title": "Create OpenRouter account", "done": false },
         { "id": "sub_002", "title": "Get API key", "done": false },
@@ -74,21 +185,6 @@
       "priority": "low",
       "comments": [],
       "createdAt": "2026-02-02T15:46:00Z"
-    },
-    {
-      "id": "task_jsonbin_sync",
-      "title": "☁️ Set up Cloud Sync for Kanban",
-      "description": "Configure JSONBin cloud sync for the Kanban app so tasks sync between PC and phone.\n\n1. Create account at jsonbin.io\n2. Get API key\n3. Open kanban Settings → paste key",
-      "status": "backlog",
-      "project": "setup",
-      "tags": ["config", "sync"],
-      "subtasks": [
-        { "id": "sub_001", "title": "Create JSONBin account", "done": false },
-        { "id": "sub_002", "title": "Configure in Kanban app", "done": false }
-      ],
-      "priority": "low",
-      "comments": [],
-      "createdAt": "2026-02-02T14:44:00Z"
     }
   ],
   "projects": [
@@ -99,8 +195,10 @@
     { "id": "setup", "name": "Setup", "color": "#8b5cf6", "icon": "⚙️" }
   ],
   "activities": [
-    { "type": "created", "actor": "Dhombs", "task": "Engineer's Toolbox", "time": "just now" },
-    { "type": "created", "actor": "Dhombs", "task": "NWD Merge Script", "time": "just now" }
+    { "type": "completed", "actor": "Dhombs", "task": "Mission Control Setup", "time": "just now" },
+    { "type": "completed", "actor": "Dhombs", "task": "Skills Installation", "time": "30 min ago" },
+    { "type": "created", "actor": "Dhombs", "task": "Engineer's Toolbox", "time": "3 hours ago" },
+    { "type": "created", "actor": "Dhombs", "task": "NWD Merge Script", "time": "3 hours ago" }
   ],
-  "lastUpdated": "2026-02-02T16:07:00Z"
+  "lastUpdated": "2026-02-02T17:25:00Z"
 }
