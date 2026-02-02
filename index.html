@@ -345,6 +345,7 @@
         .main {
             display: flex;
             height: calc(100vh - 180px);
+            overflow: hidden;
         }
 
         /* Kanban Board */
@@ -354,7 +355,9 @@
             gap: 1rem;
             padding: 1rem 2rem;
             overflow-x: auto;
+            overflow-y: hidden;
             align-items: stretch;
+            min-width: 0;
         }
 
         .column {
